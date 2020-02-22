@@ -3,6 +3,7 @@ package com.harrington.softwarehackathon2020;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Example of a call to a native method
-        TextView tv = findViewById(R.id.sample_text);
-        tv.setText(stringFromJNI());
+       ImageButton recordButton = findViewById(R.id.buttonMic);
+       ImageButton playButton = findViewById((R.id.butn4));
+
+       // tv.setText(stringFromJNI());
     }
 
     /**
