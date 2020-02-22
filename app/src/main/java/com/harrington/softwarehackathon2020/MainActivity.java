@@ -22,16 +22,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Example of a call to a native method
-       ImageButton recordButton = findViewById(R.id.buttonMic);
-       ImageButton playButton = findViewById((R.id.butn4));
-
+       final ImageButton recordButton = findViewById(R.id.buttonMic);
+       final ImageButton playButton = findViewById((R.id.butn4));
+        playButton.setVisibility(View.INVISIBLE);
 
         recordButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                audio.startRecording();
+              //  audio.startRecording();
+                recordButton.setVisibility(View.INVISIBLE);
+                playButton.setVisibility(View.VISIBLE);
             }
         });
 
+        playButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v){
+
+            }
+        });
 
     }
 
