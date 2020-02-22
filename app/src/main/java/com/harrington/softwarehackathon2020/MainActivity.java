@@ -3,6 +3,7 @@ package com.harrington.softwarehackathon2020;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -12,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     static {
         System.loadLibrary("native-lib");
     }
+    RecordAudio audio = new RecordAudio();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +25,14 @@ public class MainActivity extends AppCompatActivity {
        ImageButton recordButton = findViewById(R.id.buttonMic);
        ImageButton playButton = findViewById((R.id.butn4));
 
-       // tv.setText(stringFromJNI());
+
+        recordButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                audio.startRecording();
+            }
+        });
+
+
     }
 
     /**
