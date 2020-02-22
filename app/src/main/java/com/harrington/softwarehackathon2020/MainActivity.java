@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
         playButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
-
+                recordButton.setVisibility(View.VISIBLE);
+                playButton.setVisibility(View.INVISIBLE);
             }
         });
 
