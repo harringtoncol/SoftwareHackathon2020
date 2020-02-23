@@ -4,44 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2B2E41"
     tools:context=".MainActivity">
 
-
-    <ImageButton
-        android:id="@+id/buttonMic"
-        android:layout_width="81dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginBottom="96dp"
-        android:adjustViewBounds="true"
-        android:padding="20dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/butn4"
-        app:layout_constraintEnd_toStartOf="@+id/butn4"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/butn4"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/microphone" />
-
-    <ImageButton
-        android:id="@+id/butn4"
-        android:layout_width="77dp"
-        android:layout_height="83dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="96dp"
+    <ImageView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="This is the title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.989"
-        app:srcCompat="@drawable/redbutton" />
+        app:layout_constraintVertical_bias="0.067"
 
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="298dp"
-        android:layout_height="18dp"
+        app:srcCompat="@drawable/title" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="239dp"
+        android:layout_height="219dp"
+        android:background="TRANSPARENT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/record_button"
+        tools:srcCompat="@drawable/stop_recording" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="343dp"
+        android:layout_height="88dp"
+        android:background="#DDA0DD"
+        android:text="SPEED"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="343dp"
+        android:layout_height="88dp"
+        android:background="#DDA0DD"
+        android:text="PITCH"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="0.52" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="343dp"
+        android:layout_height="88dp"
+        android:background="#DDA0DD"
+        android:text="NOISE"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="1.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

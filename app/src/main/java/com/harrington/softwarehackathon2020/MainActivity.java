@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         //String[] arrayOfStrings = new String[8];
       //  file = new File("findme.txt");
       //  Log.d("Path","path: " + Environment.getExternalStorageDirectory().getAbsolutePath() );
-        final ImageButton recordButton = findViewById(R.id.buttonMic);
-        final ImageButton playButton = findViewById((R.id.butn4));
+        final ImageButton recordButton = findViewById(R.id.imageButton);
+        final ImageButton playButton = findViewById((R.id.imageButton));
         boolean b = false;
 
         playButton.setVisibility(View.INVISIBLE);
