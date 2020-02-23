@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -49,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
         //String[] arrayOfStrings = new String[8];
       //  file = new File("findme.txt");
       //  Log.d("Path","path: " + Environment.getExternalStorageDirectory().getAbsolutePath() );
-        final ImageButton recordButton = findViewById(R.id.imageButton);
-        final ImageButton playButton = findViewById((R.id.imageButton));
+        final Button recordButton = findViewById(R.id.button3);
+        final ImageButton playButton = findViewById((R.id.imageButton4));
         boolean b = false;
 
         playButton.setVisibility(View.INVISIBLE);
